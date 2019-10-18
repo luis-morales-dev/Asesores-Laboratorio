@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans|PT+Sans&display=swap');
+$main-font: "Martel Sans",
+sans-serif;
+$content-font: "PT Sans",
+sans-serif;
+$color1: #399de1;
+$color2: #0057e1;
+$color3: #59AEE8;
+h1,
+h2,
+h3 {
+    font-family: $main-font!important;
+}
+
+h4,
+h5 {
+    font-family: $content-font!important;
+}
+
+#mainNav {
+    background-color: $color1;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+//make navbar transparent over the slider
+.navbar {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 450px;
+    background-image: url('../img/slide_home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.count-home {
+    background-color: #F7F7F7;
+}
+
+// Footer
+.bg-black {
+    background-color: #3A3A3A!important;
+}
+
+.site-footer {
+    h5 {
+        color: $color3;
+        font-size: 1.10rem;
+        font-weight: 700;
+    }
+    .follow-box {
+        padding: 1.5em 1em;
+    }
+    .newsletter-box {
+        padding: 1.5em 1em 3em;
+    }
+    .schedule-box {
+        padding: 1.5em 1em;
+    }
+    .footer-secondary {
+        border-top: 1px solid rgba(245, 245, 245, 0.7);
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        //background-color: rgba(57, 157, 255, 0.4);
+        background: rgb(57, 157, 255);
+        background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(0, 87, 225, 0.7) 0%, rgba(57, 157, 225, 0.5) 50%);
+    }
+}
